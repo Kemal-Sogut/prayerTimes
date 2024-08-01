@@ -7,6 +7,7 @@ import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { Link } from 'expo-router';
 
 
 
@@ -25,6 +26,9 @@ export default function TabTwoScreen() {
     <View style={styles.container}>
       <View style={styles.dash}>
         <Text style={styles.dashText}>{count}</Text>
+        <Link href="/dhikrList">
+        
+        <Text>List</Text></Link>
       </View>
       <View style={styles.circle}>
         <TouchableOpacity onPress={handlePress}>
@@ -50,6 +54,7 @@ const styles = StyleSheet.create({
   },
   dash:{
     flex:1,
+    flexDirection: 'row',
     justifyContent:'center',
     alignItems: 'center',
   },

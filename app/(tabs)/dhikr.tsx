@@ -18,24 +18,27 @@ export default function TabTwoScreen() {
 
 
   return (
-    <View style={styles.container}>
+    <View style={styles.circle}>
       <TouchableOpacity onPress={handlePress}>
         <Image
           source={require('@/assets/images/Circle_(transparent).png')}
           style={styles.image}
         />
       </TouchableOpacity>
+    
+    
+      <div style={styles.border}>
+        <View style={styles.border}>
+          <Text>
+            Test
+          </Text>
+        </View>
+      </div>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  headerImage: {
-    color: '#808080',
-    bottom: -90,
-    left: -35,
-    position: 'absolute',
-  },
   titleContainer: {
     flexDirection: 'row',
     gap: 8,
@@ -43,13 +46,38 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-end',
-    paddingBottom: 100,
     alignItems: 'center',
     backgroundColor: '#fff',
+  },
+  circle: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    paddingBottom: 100,
+    alignItems: 'center',
   },
   image: {
     width: 200,
     height: 200,
     borderRadius: 10,
   },
+  plus: {
+    position: 'absolute',
+    bottom: 10,
+    right: 10,
+    fontSize: 24,
+    color: 'black', // Adjust the color as needed
+  },
+  minus: {
+    position: 'absolute',
+    bottom: 10,
+    left: 10,
+    fontSize: 24,
+    color: 'black', // Adjust the color as needed
+  },
+  border: {
+    width:'100%',
+    borderWidth:1,
+    borderColor:'black'
+
+  }
 });

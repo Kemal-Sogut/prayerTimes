@@ -37,10 +37,10 @@ export default function TabTwoScreen() {
           style={styles.image}
           />
         </TouchableOpacity>
+        <View style={styles.buttonContainer}>
 
-        <TouchableOpacity  onPress={reset}>
-        <Text>Reset</Text>
-      </TouchableOpacity>
+        <Button title='Reset'onPress={reset} />
+        </View>
       </View>
 
     </View>
@@ -57,6 +57,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent:'center',
     alignItems: 'center',
+  },
+  buttonContainer:{
+    marginTop:20,
+    color:' red',
   },
   container:{
     height:'100%',

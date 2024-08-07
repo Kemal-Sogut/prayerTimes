@@ -1,5 +1,6 @@
-import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
+import { Button, View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
+import { Link } from 'expo-router';
 
 // Define the types for the items in the list
 interface ItemProps {
@@ -46,6 +47,11 @@ const DhikrList = () => {
       <TouchableOpacity onPress={() => updateCount(id)}>
         {/* Text component to display the title and count */}
         <Text style={styles.list}>{title}: {count}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Link href={'/'}>
+          <Text>Edit</Text>
+        </Link>
       </TouchableOpacity>
     </View>
   );

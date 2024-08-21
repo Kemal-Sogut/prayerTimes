@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "862976797973",
+    "firebase_url": "https://my-todo-tracking-app-default-rtdb.firebaseio.com",
+    "project_id": "my-todo-tracking-app",
+    "storage_bucket": "my-todo-tracking-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862976797973:android:8de5210dc39c7762550d1c",
+        "android_client_info": {
+          "package_name": "com.fourautomation.webapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ4_Xn29aOWDr8QIwgGn_AZpPrvWARhA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
